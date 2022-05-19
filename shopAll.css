@@ -715,8 +715,14 @@ a {
 
 }
 
-/* Tablet Fold max-width 1114px */
-@media screen and (max-width:1114px) {}
+/* laptop14 inch */
+@media screen and (max-width:1300px) {
+    .flex-container .box {
+    
+        width: 293px;
+        
+    }
+}
 
 /* Tablet max-width 900px */
 @media screen and (max-width:900px) {
