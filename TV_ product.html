@@ -11,17 +11,19 @@
     <!-- Icon of the paget -->
     <link rel="icon" type="image/png" href="pic\logo .png" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap 4 JavaScript and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
     <!-- font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Aplle Products</title>
+    <title>Products</title>
 </head>
 
 <body>
@@ -31,59 +33,47 @@
     </button>
 
     <!--------------product code------------------->
-    <div >
-        <h1 class="heading">
-                <span>M</span>
-                <span>o</span>
-                <span>B</span>
-                <span>I</span>
-                <span>L</span>
-                <span>E</span>
-                <span class="space">&</span>
-                <span class="space1"></span>
-                <span >T</span>
-                <span>A</span>
-                <span>B</span>
-                <span>L</span>
-                <span>E</span>
-                <span>T</span>
-        </h1>
-    
-    </div>
-    
+
+    <h1 class="heading">
+        <span>T</span>
+        <span>V</span>
+        
+       
+    </h1>
+
     <center>
         <div id="myBtnContainer">
-            <h1>FILTER BY CATEGORY</h1>
+            <h1>FILTER BY PRICE</h1>
             <button class="btn1 active" onclick="filterSelection('all')"> ALL</button>
-            <button class="btn1" onclick="filterSelection('Mobiles')"> Mobiles</button>
-            <button class="btn1" onclick="filterSelection('Tablets')"> Tablets</button>
+            <button class="btn1" onclick="filterSelection('below_10')"> Below 10</button>
+            <button class="btn1" onclick="filterSelection('range_10_30')"> EGP 10.000 : EGP 30.000</button>
+            <button class="btn1" onclick="filterSelection('above_30')"> Above_30</button>
         </div>
     </center>
     <div class="container">
 
-        <div class="filterDiv Mobiles">
+        <div class="filterDiv below_10">
             <div class="product ">
                 <div class="product-card">
-                    <h2 class="name">iPhone 13 Pro</h2>
-                    <span class="price">$999.00</span>
+                    <h2 class="name">LG LED TV 43 inch</h2>
+                    <span class="price">EGP 6,199.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPhone 13 Pro.png" class="product-img" alt="">
+                    <img src="images/TV/D-1_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPhone 13 Pro pop.png" alt="">
+                            <img src="images/TV/product1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone 13<br><span>APPLE</span></h2>
-                            <p style="text-align: left;">6.1-inch Super Retina XDR displayfootnote¹ with ProMotion
-                                for a faster, more responsive feel.Biggest Pro camera system upgrade ever for epic
-                                low-light shots and macro photography
-                                A15 Bionic with 5-core GPU — the fastest chip ever in a smartphone
-                                Ceramic Shield, tougher than any smartphone glass. And IP68 water
-                                resistance.footnote²</p>
-                            <span class="price">$999.00</span>
+                            <h2> LG LED TV 43 inch<br><span></span></h2>
+                            <p style="text-align: left;">LG LED TV 43 inch LM5500 Series Full HD LED TV A New Level of Full-HD
+                                Dynamic Color Enhancer
+                                Dolby Audio™ A Movie-like Sound Experience
+                                Choose, Connect, and Enjoy
+                                Simple yet Sophisticated Design</p>
+                            <span class="price">EGP 6,199.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -92,28 +82,28 @@
             </div>
         </div>
 
-        <div class="filterDiv Mobiles">
+        <div class="filterDiv range_10_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPhone 13</h2>
-                    <span class="price">$799.00</span>
+                    <h2 class="name">LG NanoCell TV 50 inch</h2>
+                    <span class="price">EGP 10,499.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPhone 13.png" class="product-img" alt="">
+                    <img src="images/TV/2_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPhone 13 pop.png" alt="">
+                            <img src="images/TV/2_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone 13<br><span>APPLE</span></h2>
-                            <p>6.1-inch Super Retina XDR display,footnote¹ now 28% brighter
-                                Our most advanced dual-camera system for incredible low-light photos and videos
-                                A15 Bionic with 4-core GPU — faster than the competition
-                                Ceramic Shield, tougher than any smartphone glass. And IP68 water
-                                resistance.footnote²</p>
-                            <span class="price">$799.00</span>
+                            <h2> LG NanoCell TV  <br><span>LG</span></h2>
+                            <p>LG NanoCell TV 50 inch NANO75 Series, 4K Active HDR, WebOS Smart ThinQ AI Real 4K NANO Cell for Pure coloer with Nano Color , Nano Accuracy
+                                α5 AI Processor 4k with AI 4K upscaling
+                                ThinQ AI webOS Smart TV with Magic Remote
+                                True Cinema Experience suported with Active HDR , Film Maker Mode , AI Sound
+                                Unlimited Gameplay with HGiG , ALLM , HDMI 2.0 eARC</p>
+                            <span class="price">EGP 10,499.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -122,29 +112,25 @@
             </div>
         </div>
 
-        <div class="filterDiv Mobiles">
+        <div class="filterDiv above_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPhone SE</h2>
-                    <span class="price">$429.00</span>
+                    <h2 class="name">LG QNED TV 65 Inch</h2>
+                    <span class="price">EGP 52,499.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPhone SE.png" class="product-img" alt="">
+                    <img src="images/TV/D-1_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPhone SE pop.png" alt="">
+                            <img src="images/TV/D-1_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone SE<br><span>APPLE</span></h2>
-                            <p>4.7-inch Retina HD displayfootnote¹ that’s bright, colorful, and sharp
-                                A15 Bionic, the same super-powerful chip that’s in iPhone 13
-                                5G for fast downloads and high-quality streamingfootnote²
-                                Smarter camera makes automatic adjustments so faces, places, everything looks
-                                fabulous
+                            <h2>LG QNED TV <br><span>LG</span></h2>
+                            <p>LG QNED TV 65 Inch QNED95 series, Cinema Screen Design 8K Cinema HDR WebOS Smart ThinQ AI Mini LED
                             </p>
-                            <span class="price">$429.00</span>
+                            <span class="price">EGP 52,499.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -152,30 +138,30 @@
                 </div>
             </div>
         </div>
-        <div class="filterDiv Mobiles">
+        <div class="filterDiv range_10_30">
             <div class="product">
                 <div class="product-card">
 
-                    <h2 class="name">iPhone 12</h2>
-                    <span class="price">$699.00</span>
+                    <h2 class="name">LG NanoCell TV 50 Inch</h2>
+                    <span class="price">EGP 10,900.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iphone 12.png" class="product-img" alt="">
+                    <img src="images/TV/4_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPhone 12 pop.png" alt="">
+                            <img src="images/TV/4_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone 12<br><span>APPLE</span></h2>
-                            <p>6.1-inch Super Retina XDR displayfootnote¹ for great contrast and incredible color
-                                accuracy
-                                Advanced dual-camera system with Night mode and Dolby Vision HDR recording
-                                Superpowerful A14 Bionic chip
-                                Ceramic Shield, tougher than any smartphone glass. And IP68 water
-                                resistance.footnote²</p>
-                            <span class="price">$699.00</span>
+                            <h2>LG NanoCell TV<br><span>LG</span></h2>
+                            <p>LG NanoCell TV 50 Inch NANO80 Series Cinema Screen Design 4K Active HDR webOS Smart with ThinQ AI Local Dimming LG NanoCell technology for pure colours in 4K Ultra HD
+                                Local dimming for bolder contrast
+                                Fast Quad Core Processor 4K
+                                HDR for impressive cinema, sport and gaming
+                                Smart LG technology, LG AI ThinQ
+                                webOS Smart TV with Pointing and Wheel Control Magic Remote</p>
+                            <span class="price">EGP 10,900.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -183,28 +169,28 @@
                 </div>
             </div>
         </div>
-        <div class="filterDiv Tablets">
+        <div class="filterDiv below_10">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPad Pro</h2>
-                    <span class="price">$799.00</span>
+                    <h2 class="name">LG UHD 4K TV 43 Inch</h2>
+                    <span class="price">EGP 8,299.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPad Pro.png" class="product-img" alt="">
+                    <img src="images/TV/5_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPad Pro.png" alt="">
+                            <img src="images/TV/5_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPad Pro 11-inch<br><span>APPLE</span></h2>
-                            <p>Apple M1 chip for next-level performance
-                                11-inch Liquid Retina displayfootnote¹ with ProMotion, True Tone, and P3 wide color
-                                Pro cameras with LiDAR Scanner, and Ultra Wide front camera with Center Stage
-                                Compatible with Apple Pencil (2nd generation), Magic Keyboard, and Smart Keyboard
-                                Foliofootnote³</p>
-                            <span class="price">$799.00</span>
+                            <h2> LG UHD 4K TV<br><span>LG</span></h2>
+                            <p>LG UHD 4K TV 43 Inch UP75 Series, 4K Active HDR WebOS Smart AI ThinQ Real 4K UHD picture, colour and depth
+                                α5 AI Processor 4k with AI 4K upscaling
+                                ThinQ AI webOS Smart TV with Magic Remote
+                                True Cinema Experience suported with Active HDR , Film Maker Mode , AI Sound
+                                Unlimited Gameplay with HGiG , ALLM , HDMI 2.0 eARC</p>
+                            <span class="price">EGP 8,299.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -212,57 +198,28 @@
                 </div>
             </div>
         </div>
-        <div class="filterDiv Tablets">
+        <div class="filterDiv above_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPad Air</h2>
-                    <span class="price">$599.00</span>
+                    <h2 class="name">LG G2 65 inch evo Gallery Edition</h2>
+                    <span class="price">EGP 37,314.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPad Air.png" class="product-img" alt="">
+                    <img src="images/TV/6_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPad Air.png" alt="">
+                            <img src="images/TV/6_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPad Air<br><span>APPLE</span></h2>
-                            <p>Apple M1 chip powers next-level performance and all-day battery lifefootnote¹
-                                10.9-inch Liquid Retina display delivers an immersive viewing experiencefootnote²
-                                12MP Ultra Wide front camera with Center Stage for more natural video calls
-                                Compatible with Apple Pencil (2nd generation), Magic Keyboard, and Smart Keyboard
-                                Foliofootnote⁴</p>
-                            <span class="price">$599.00</span>
-                            <a href="#" class="add-cart-btn">Add to Cart</a>
-                            <a href="#" class="add-wish">Add to Wishlist</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="filterDiv Tablets">
-            <div class="product">
-                <div class="product-card">
-                    <h2 class="name">iPad</h2>
-                    <span class="price">$329.00</span>
-                    <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPad.png" class="product-img" alt="">
-                </div>
-                <div class="popup-view">
-                    <div class="popup-card">
-                        <a><i class="fa fa-times close-btn"></i></a>
-                        <div class="product-img">
-                            <img src="mopile&tablets/iPad.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h2>iPad<br><span>APPLE</span></h2>
-                            <p>The A13 Bionic chip with Neural Engine makes everything you do more responsive
-                                10.2-inch Retina display with True Tone for incredible detail and vivid colors
-                                12MP Ultra Wide front camera with Center Stage for more natural video calls
-                                Starts at 64GB of storage to give you more room for your filesfootnote¹</p>
-                            <span class="price">$329.00</span>
+                            <h2> LG G2 65 inch <br><span>LG</span></h2>
+                            <p>LG G2 65 inch evo Gallery Edition LG OLED evo Gallery Edition, SELF-LIT OLED 4K
+                                Bightness Booster Max for up to 30% brighter picture
+                                α9 Gen5 AI processor, Dynamic Tone Mapping Pro
+                                Flush-fit wall mount Gallery design
+                                Dolby Vision IQ with Precision Detail, Dolby Atmos</p>
+                            <span class="price">EGP 37,314.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -271,28 +228,56 @@
             </div>
         </div>
 
-        <div class="filterDiv Tablets">
+        <div class="filterDiv range_10_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPad mini</h2>
-                    <span class="price">$499.00</span>
+                    <h2 class="name">NanoCell 50NANO796QA</h2>
+                    <span class="price">EGP 15.500.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPad mini.png" class="product-img" alt="">
+                    <img src="images/TV/7_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPad mini.png" alt="">
+                            <img src="images/TV/7_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone 13<br><span>APPLE</span></h2>
-                            <p>A15 Bionic chip for incredible performance and all-day battery lifefootnote¹
-                                Stunning 8.3-inch Liquid Retina display with True Tone and P3 wide colorfootnote²
-                                12MP Ultra Wide front camera with Center Stage for more natural video calls
-                                5G and Wi-Fi 6 for ultrafast connectionsfootnote³
-                                Touch ID built into the top button for secure authentication and Apple Pay</p>
-                            <span class="price">$499.00</span>
+                            <h2>NanoCell <br><span>LG</span></h2>
+                            <p>NanoCell 50NANO796QA Pure Colors in Real 4K
+                                NanoCell Technology
+                                LG α5 Gen5 AI Processor 4K
+                                ThinQ AI</p>
+                            <span class="price">EGP 15.500.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add to Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filterDiv range_10_30">
+            <div class="product">
+                <div class="product-card">
+                    <h2 class="name">UHD 4K TV</h2>
+                    <span class="price">EGP 20.800.00</span>
+                    <a class="popup-btn">Quick View</a>
+                    <img src="images/TV/8_preview_rev_1.png" class="product-img" alt="">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a><i class="fa fa-times close-btn"></i></a>
+                        <div class="product-img">
+                            <img src="images/TV/8_preview_rev_1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2> UHD 4K TV<br><span>LG</span></h2>
+                            <p>Real 4K
+                                Slim design
+                                [α5 Gen5 AI Processor] for enhanced viewing experience
+                                [ThinQ AI & WebOS] for personalized settings</p>
+                            <span class="price">EGP 20.800.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -304,27 +289,28 @@
 
 
 
-        <div class="filterDiv Tablets">
+        <div class="filterDiv below_10">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPad pro</h2>
-                    <span class="price">$329.00</span>
+                    <h2 class="name">LG UHD 4K TV</h2>
+                    <span class="price">EGP 8,399.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPad.png" class="product-img" alt="">
+                    <img src="images/TV/9_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPad.png" alt="">
+                            <img src="images/TV/9_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPad<br><span>APPLE</span></h2>
-                            <p>The A13 Bionic chip with Neural Engine makes everything you do more responsive
-                                10.2-inch Retina display with True Tone for incredible detail and vivid colors
-                                12MP Ultra Wide front camera with Center Stage for more natural video calls
-                                Starts at 64GB of storage to give you more room for your filesfootnote¹</p>
-                            <span class="price">$329.00</span>
+                            <h2> LG UHD 4K TV<br><span>LG</span></h2>
+                            <p>LG UHD 4K TV 43 Inch UP77 Series, Cinema Screen Design 4K Active HDR WebOS Smart AI ThinQ Real 4K UHD picture, colour and depth
+                                α5 AI Processor 4k with AI 4K upscaling
+                                ThinQ AI webOS Smart TV with Magic Remote
+                                True Cinema Experience suported with Active HDR , Film Maker Mode , AI Sound
+                                Unlimited Gameplay with HGiG , ALLM , HDMI 2.0 eARC</p>
+                            <span class="price">EGP 8,399.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -333,28 +319,28 @@
             </div>
         </div>
 
-        <div class="filterDiv Mobiles">
+        <div class="filterDiv range_10_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPhone 13 Mini</h2>
-                    <span class="price">$699.00</span>
+                    <h2 class="name">LG UHD 4K TV 65 Inch</h2>
+                    <span class="price">EGP 13,999.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iphone13mini.png" class="product-img" alt="">
+                    <img src="images/TV/10_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iphone13mini POP.png" alt="">
+                            <img src="images/TV/10_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone 13<br><span>APPLE</span></h2>
-                            <p>6.1-inch Super Retina XDR display,footnote¹ now 28% brighter
-                                Our most advanced dual-camera system for incredible low-light photos and videos
-                                A15 Bionic with 4-core GPU — faster than the competition
-                                Ceramic Shield, tougher than any smartphone glass. And IP68 water
-                                resistance.footnote²</p>
-                            <span class="price">$699.00</span>
+                            <h2> LG UHD 4K TV<br><span>LG</span></h2>
+                            <p>LG UHD 4K TV 65 Inch UP81 Series, Cinema Screen Design 4K Active HDR WebOS Smart AI ThinQ Real 4K UHD picture, colour and depth
+                                α5 AI Processor 4k with AI 4K upscaling
+                                ThinQ AI webOS Smart TV with Magic Remote
+                                True Cinema Experience suported with Active HDR , Film Maker Mode , AI Sound
+                                Unlimited Gameplay with HGiG , ALLM , HDMI 2.0 eARC</p>
+                            <span class="price">EGP 13,999.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -363,29 +349,29 @@
             </div>
         </div>
 
-        <div class="filterDiv Mobiles">
+        <div class="filterDiv above_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPhone 11</h2>
-                    <span class="price">$499.00</span>
+                    <h2 class="name">LG OLED TV 48 Inch</h2>
+                    <span class="price">EGP 32,498.00</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/IPHONE11.png" class="product-img" alt="">
+                    <img src="images/TV/11_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/IPHONE 11.png" alt="">
+                            <img src="images/TV/11_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone SE<br><span>APPLE</span></h2>
-                            <p>4.7-inch Retina HD displayfootnote¹ that’s bright, colorful, and sharp
-                                A15 Bionic, the same super-powerful chip that’s in iPhone 13
-                                5G for fast downloads and high-quality streamingfootnote²
-                                Smarter camera makes automatic adjustments so faces, places, everything looks
-                                fabulous
-                            </p>
-                            <span class="price">$499.00</span>
+                            <h2>LG OLED TV<br><span>LG</span></h2>
+                            <p>LG OLED TV 48 Inch C1 Series, Cinema Screen Design 4K Cinema HDR WebOS Smart AI ThinQ Pixel Dimming LG 4K SELF-LIT OLED evo – true brilliance in clarity of content
+                                Perfect Color ( 100% colour fidelity ) Eye Comfort Display
+                                α9 Gen4 AI Processor 4k with AI 4K upscaling
+                                ThinQ AI webOS Smart TV with NFC Magic Remote
+                                True Cinema Experience suported with Dolby Vision IQ | Dolby Atmos
+                                Unlimited Gameplay with GSYNC , AMD FreeSync Premium , LG VRR , HGiG HDMI 2.1 , Game Optimiser </p>
+                            <span class="price">EGP 32,498.00</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -393,28 +379,30 @@
                 </div>
             </div>
         </div>
-        <div class="filterDiv Tablets">
+        <div class="filterDiv above_30">
             <div class="product">
                 <div class="product-card">
-                    <h2 class="name">iPad mini</h2>
-                    <span class="price">$499.00</span>
+                    <h2 class="name">LG OLED TV 65 Inch</h2>
+                    <span class="price">EGP 48,990.90</span>
                     <a class="popup-btn">Quick View</a>
-                    <img src="mopile&tablets/iPad mini.png" class="product-img" alt="">
+                    <img src="images/TV/12_preview_rev_1.png" class="product-img" alt="">
                 </div>
                 <div class="popup-view">
                     <div class="popup-card">
                         <a><i class="fa fa-times close-btn"></i></a>
                         <div class="product-img">
-                            <img src="mopile&tablets/iPad mini.png" alt="">
+                            <img src="images/TV/12_preview_rev_1.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>iPhone 13<br><span>APPLE</span></h2>
-                            <p>A15 Bionic chip for incredible performance and all-day battery lifefootnote¹
-                                Stunning 8.3-inch Liquid Retina display with True Tone and P3 wide colorfootnote²
-                                12MP Ultra Wide front camera with Center Stage for more natural video calls
-                                5G and Wi-Fi 6 for ultrafast connectionsfootnote³
-                                Touch ID built into the top button for secure authentication and Apple Pay</p>
-                            <span class="price">$499.00</span>
+                            <h2> LG OLED TV <br><span>LG</span></h2>
+                            <p>LG OLED TV 65 Inch G1 Series, Gallery Design 4K Cinema HDR WebOS Smart AI ThinQ Pixel Dimming
+                                LG 4K SELF-LIT OLED evo – true brilliance in clarity of content
+                                Perfect Color ( 100% colour fidelity ) Eye Comfort Display
+                                α9 Gen4 AI Processor 4k with AI 4K upscaling
+                                ThinQ AI webOS Smart TV with NFC Magic Remote
+                                True Cinema Experience suported with Dolby Vision IQ | Dolby Atmos
+                                Unlimited Gameplay with GSYNC , AMD FreeSync Premium , LG VRR , HGiG HDMI 2.1 , Game Optimiser</p>
+                            <span class="price">EGP 48,990.90</span>
                             <a href="#" class="add-cart-btn">Add to Cart</a>
                             <a href="#" class="add-wish">Add to Wishlist</a>
                         </div>
@@ -430,8 +418,7 @@
 
 
     <!------------------ nav bar start ---------------------->
-
-
+ 
     <!----------------------navbar---------------------->
 
 
@@ -508,8 +495,7 @@
         </nav>
     </div>
 
-
-    <!------------------ nav bar end ---------------------->
+<!------------------ nav bar end ---------------------->
     <!-- login form container  -->
     <div class="login-form-container">
         <i class="fa fa-times" id="form-close"></i>
@@ -524,17 +510,19 @@
             <p>don't have and account? <a href="Registration Form.html">register now</a></p>
         </form>
     </div>
-      
-              <!------------------ footer start ---------------------->
+    <!------------------ footer start ---------------------->
 
 
-      <footer class="footer" style="border-radius: 3rem; margin: 2%;" id="footer_">
+
+    <!------------------ footer start ---------------------->
+
+
+    <footer class="footer" style="border-radius: 3rem; margin: 2%;" id="footer_">
         <div class="footer__addr">
             <h3 class="footer__logo"><span style="color: red">T</span>echno<span style="color: red">S</span>tore</h3>
         </div>
 
         <ul class="footer__nav">
-            
             <li class="nav__item">
                 <h3 class="nav__title1">shop</h3>
                 <ul class="nav__ul">
@@ -587,7 +575,7 @@
 
         </div>
         <div class="legal">
-            <p>&copy; By Techno shop @ 2022</p>
+            <p>&copy; By Techno Store @ 2022</p>
         </div>
 
 
@@ -595,10 +583,7 @@
 
 
 
-
     <!------------------ footer end ---------------------->
-
-
     <hr class="container" style="width:50%;">
     <!-- payment section  -->
     <h4 style="text-align: center;">We accept the following paying methods </h4>
@@ -652,8 +637,7 @@
 
     <!-- payment section  -->
    
-      <script src="script.js"></script>
-
+   <script src="productes.js"></script>
 
 
 </body>
