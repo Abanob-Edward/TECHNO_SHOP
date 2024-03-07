@@ -164,22 +164,22 @@
         <!-- Ad banners end -->
         <!-- Nav for filtering-->
         <div class="nav">
-            <div id="myBtnContainer nave">
+            <div id="myBtnContainer">
                 <h1>FILTER BY CATEGORY</h1>
-                <button class="btn1 active" onclick="filterSelection('all')" id="showAll"> ALL</button>
-                <button class="btn1" onclick="filterSelection('pc')" id="hide"> Laptops</button>
-                <button class="btn1" onclick="filterSelection('Mobile')" id="hide1"> Mobiles</button>
-                <button class="btn1" onclick="filterSelection('tablet')" id="hide2">Tablets</button>
-                <button class="btn1" onclick="filterSelection('tv')" id="hide3"> TVs</button>
-                <button class="btn1" onclick="filterSelection('Headphone')" id="hide4">Headphones</button>
-                <button class="btn1" onclick="filterSelection('watch')" id="hide5"> Watches</button>
+                <button class="btn1 active" onclick="filterSelection('all',this)" id="showAll"> ALL</button>
+                <button class="btn1" onclick="filterSelection('pc' ,this)" id="hide"> Laptops</button>
+                <button class="btn1" onclick="filterSelection('Mobile',this)" id="hide1"> Mobiles</button>
+                <button class="btn1" onclick="filterSelection('tablet',this)" id="hide2">Tablets</button>
+                <button class="btn1" onclick="filterSelection('tv',this)" id="hide3"> TVs</button>
+                <button class="btn1" onclick="filterSelection('Headphone',this)" id="hide4">Headphones</button>
+                <button class="btn1" onclick="filterSelection('watch',this)" id="hide5"> Watches</button>
             </div>
         </div>
         <!-- Nav for filtering end-->
 
         <!-- Shop All BOXES -->
 
-        <div class="box filterDiv tv">
+        <div class="box filterDiv tv show">
 
             <div class="bor">
                 <img class="tv_img" src="pic/lg tv.png" alt="">
@@ -193,7 +193,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv Mobile">
+        <div class="box filterDiv Mobile show">
 
             <div class="bor">
                 <img class="mob_img" src="images/phone_tablets/iphone 13.png" alt="Apple iPhone 13 photo">
@@ -211,7 +211,7 @@
 
 
 
-        <div class="box filterDiv Headphone">
+        <div class="box filterDiv Headphone show">
 
             <div class="bor">
                 <img class="head_img" src="pic/Generic hp.png" alt="">
@@ -230,7 +230,7 @@
 
 
 
-        <div class="box filterDiv watch">
+        <div class="box filterDiv watch show">
 
             <div class="bor">
                 <img class="watch_img" src="pic/samsong sw1.png" alt="">
@@ -247,7 +247,7 @@
 
 
 
-        <div class="box filterDiv pc">
+        <div class="box filterDiv pc show">
 
             <div class="bor">
                 <img class="tv_img" src="images/phone_tablets/acer.png" alt="Acer Predator Helios 300">
@@ -264,7 +264,7 @@
             </section>
         </div>
 
-        <div class="box filterDiv tablet">
+        <div class="box filterDiv tablet show">
 
             <div class="bor">
                 <img class="tab_img" src="images/phone_tablets/hwpad.png" alt="">
@@ -280,7 +280,7 @@
             </section>
         </div>
 
-        <div class="box filterDiv Mobile">
+        <div class="box filterDiv Mobile show">
             <div class="bor">
                 <img class="mob_img" src="images/phone_tablets/s22 ultra.png" alt="Samsung Galaxy S22 Ultra photo">
             </div>
@@ -294,7 +294,7 @@
             </section>
         </div>
 
-        <div class="box filterDiv Headphone">
+        <div class="box filterDiv Headphone show">
 
             <div class="bor">
                 <img class="head_img" src="pic/logitech hp.png" alt="">
@@ -310,7 +310,7 @@
             </section>
         </div>
 
-        <div class="box filterDiv tv">
+        <div class="box filterDiv tv show">
             <div class="bor">
                 <img class="tv_img" src="pic/sony tv.png" alt="">
             </div>
@@ -336,7 +336,7 @@
         </div>
         <!-- Ad end -->
 
-        <div class="box filterDiv tablet">
+        <div class="box filterDiv tablet show">
 
             <div class="bor">
                 <img class="tab_img" src="images/phone_tablets/samtab.png" alt="">
@@ -351,7 +351,7 @@
             </section>
         </div>
 
-        <div class="box filterDiv pc">
+        <div class="box filterDiv pc show">
 
             <div class="bor">
                 <img class="tv_img" src="images/phone_tablets/msi.png" alt="">
@@ -367,7 +367,7 @@
             </section>
         </div>
 
-        <div class="box filterDiv Headphone">
+        <div class="box filterDiv Headphone show">
 
             <div class="bor">
                 <img class="head_img" src="pic/logitech hp2.png" alt="">
@@ -381,7 +381,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv tv">
+        <div class="box filterDiv tv show">
 
             <div class="bor">
                 <img class="tv_img" src="pic/samsong_1.png" alt="">
@@ -395,7 +395,7 @@
         </div>
 
 
-        <div class="box filterDiv watch">
+        <div class="box filterDiv watch show">
 
             <div class="bor">
                 <img class="watch_img" src="pic/apple.png" alt="">
@@ -409,7 +409,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv Mobile">
+        <div class="box filterDiv Mobile show">
 
             <div class="bor">
                 <img class="mob_img" src="images/phone_tablets/hw nova.png" alt="HUAWEI nova 9 Smartphone">
@@ -425,7 +425,7 @@
         </div>
 
 
-        <div class="box filterDiv Headphone">
+        <div class="box filterDiv Headphone show">
 
             <div class="bor">
                 <img class="head_img" src="pic/acer hp.png" alt="">
@@ -439,7 +439,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv tv">
+        <div class="box filterDiv tv show">
 
             <div class="bor">
                 <img class="tv_img" src="pic/mci tv.png" alt="">
@@ -452,7 +452,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv Mobile">
+        <div class="box filterDiv Mobile show">
 
             <div class="bor">
                 <img class="mob_img" src="images/phone_tablets/Xiaomi Mi 11.png" alt="Xiaomi Mi 11">
@@ -465,7 +465,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv tablet">
+        <div class="box filterDiv tablet show">
             <div class="bor">
                 <img class="tab_img" src="images/phone_tablets/ipad.png" alt="">
             </div>
@@ -477,7 +477,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv watch">
+        <div class="box filterDiv watch show">
 
             <div class="bor">
                 <img class="watch_img" src="pic/IMILAB.png" alt="">
@@ -490,7 +490,7 @@
             <a class="whish_link" href="#">Add to Wishlist</a>
         </div>
 
-        <div class="box filterDiv pc">
+        <div class="box filterDiv pc show">
 
             <div class="bor">
                 <img class="tv_img" src="images/phone_tablets/tuf.png" alt="Laptop Gaming TUF">
@@ -732,3 +732,6 @@
 </body>
 
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>

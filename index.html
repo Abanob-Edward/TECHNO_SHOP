@@ -18,12 +18,13 @@
     <link rel="icon" type="image/png" href="pic\logo .png" />
 
     <!-- Bootstrap 4 CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+<!--     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->   
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap 4 JavaScript and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!--  icons sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -33,12 +34,14 @@
 </head>
 
 <body>
+
     <!----------------------navbar---------------------->
 
     <!----------------------navbar---------------------->
 
 
     <div class="fixed-top" id="nav_fixed" style="z-index: 1;">
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom: 0%;">
             <div class="container-fluid">
                 <a class="navbar-brand" style="color: white" href="index.html"> &nbsp;
@@ -49,8 +52,8 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" onclick="hidsidebar()"></span>
+                    aria-label="Toggle navigation" onclick="hidsidebar()">
+                    <span class="navbar-toggler-icon" ></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -98,7 +101,7 @@
                         </samp>
                     </form>
 
-                    <a class="navbar-brand" id="login-btn" href="#">
+                    <a class="navbar-brand" id="login-btn" href="#" onclick="showLogin()">
                         <i class="fa fa-user" aria-hidden="true" style="font-size:24px; padding: 5px;"></i>
                     </a>
                     <a class="navbar-brand" href="#">
@@ -111,8 +114,8 @@
     </div>
 
     <!-- login form container  -->
-    <div class="login-form-container">
-        <i class="fa fa-times" id="form-close"></i>
+    <div class="login-form-container" id="login-form-container" >
+        <i class="fa fa-times" id="form-close" onclick="CloseLogin()"> </i>
         <form action="">
             <h3>login</h3>
             <input type="email" class="box" placeholder="enter your email">
@@ -136,20 +139,23 @@
         </div>
 
         <div class="controls">
+            
             <span class="vid-btn active" data-src="images/1.mp4"></span>
             <span class="vid-btn" data-src="images/2.mp4"></span>
             <span class="vid-btn" data-src="images/3.mp4"></span>
         </div>
 
         <div class="video-container">
+            
             <video src="images/1.mp4" id="video-slider" loop autoplay muted></video>
+            
         </div>
     </section>
     <!-- SLIDER ends -->
 
     <!-- offer start -->
     <div class="row_sale" style="background-color:#fff; border-radius: 3rem; margin: 2%;">
-        <div class="container" style="padding-top: 2.5%;">
+        <div class="container-fluid" style="padding-top: 2.5%;">
             <div class="row">
                 <div class="column">
                     <div class="effect">
@@ -264,7 +270,7 @@
         <div class="col_box">
             <a href="Computers_product -.html">
                 <div class="column_sale">
-                    <img src="pic/11.png" alt="Laptop">
+                    <img src="pic/11.png" height="54vh" alt="Laptop">
                     <h3>MSP 14" Laptop 16GB Memory, Carbon Gray</h3>
                     <span class="reg">EGP16,00.00</span>
                     <br />
@@ -275,7 +281,7 @@
             <a href="Phone&&Tablete_product.html">
                 <div class="column_sale">
                     <span class="sale_color">Sale</span>
-                    <img src="pic/12.png" alt="Pilates">
+                    <img src="pic/12.png" height="54vh" alt="Pilates">
                     <h3>Pilates Go 10.5" Touch-Screen, 64GB With Cover</h3>
                     <span class="reg">EGP7,200.00</span>
                     <br />
@@ -285,9 +291,8 @@
             <a href="Phone&&Tablete_product.html">
                 <div class="column_sale">
                     <span class="sale_color">Sale</span>
-                    <img src="pic/13.png" alt="JP Light Phantom">
-                    <h3> <strong> samsung</strong> Light Phantom, 5G, 16GB,<br> Unlocked</h3>
-
+                    <img src="pic/13.png" height="54vh" alt="JP Light Phantom">
+                    <h3> <strong> samsung</strong> Light Phantom, 5G, 16GB, Unlocked</h3>
                     <span class="reg">EGP5,50.00</span>
                     <br />
                     <span class="sale_price">EGP5,00.00</span>
@@ -296,7 +301,7 @@
 
             <a href="TV_ product.html">
                 <div class="column_sale">
-                    <img src="pic/14.png" alt=" Smart TV">
+                    <img src="pic/14.png" height="54vh" alt=" Smart TV">
                     <h3>Allure 55" Class LED 4K UHD <br> Smart TV</h3>
                     <span class="reg">EGP9,499.00</span>
                     <br />
@@ -599,11 +604,15 @@
     </div>
 
 
-
+   <!-- Aroww to top   -->
+   <button onclick="topFunction()" id="top_Arrow" title="Go to top" >
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+   </button>
 
     <!-- custom js file link  -->
     <script src="script.js"></script>
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

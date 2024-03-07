@@ -7,6 +7,7 @@ var popupBtns = document.querySelectorAll('.popup-btn');
 var closeBtns = document.querySelectorAll('.close-btn');
 
 
+
 formBtn.addEventListener('click', () => {
   loginForm.classList.add('active');
 });
@@ -14,7 +15,23 @@ formBtn.addEventListener('click', () => {
 formClose.addEventListener('click', () => {
   loginForm.classList.remove('active');
 });
-
+setInterval(function() {
+  var source = $("#video-slider").attr("src");
+/* var source =  document.getElementById("video-slider").src */
+  if(source=="images/1.mp4")
+    {
+      document.getElementById("video-slider").src="images/2.mp4"
+    }
+    if(source=="images/2.mp4")
+    {
+      document.getElementById("video-slider").src="images/3.mp4"
+    }
+    if(source=="images/3.mp4")
+    {
+      document.getElementById("video-slider").src="images/1.mp4"
+    }
+  
+}, 8000);
 
 videoBtn.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -81,14 +98,21 @@ function read_more() {
 
 ///FILTER/////////
 
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+
+function filterSelection(valClassName,obj) {
+  
+  var x = document.getElementsByClassName("filterDiv");
+  var btns = document.getElementsByClassName("btn1")
+  for (i = 0; i < btns.length; i++) {
+    RemoveClass(btns[i], "active");
+  }
+  obj.classList.add("active")
+  if (valClassName == "all") 
+         valClassName = "";
   for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    if (x[i].className.indexOf(valClassName) > -1)
+        AddClass(x[i], "show");
   }
 }
 
@@ -113,9 +137,9 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
+/* // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn1");
+var btns = document.getElementsByClassName("btn1");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
@@ -125,7 +149,7 @@ for (var i = 0; i < btns.length; i++) {
 
 }
 ////FILTER END
-
+ */
 
 
 //javascript for quick view button
@@ -148,3 +172,9 @@ closeBtns.forEach((closeBtn) => {
   });
 });
 
+function showLogin(){
+  document.getElementById("login-form-container").style.display="flex";
+}
+function CloseLogin(){
+  document.getElementById("login-form-container").style.display="none";
+}
